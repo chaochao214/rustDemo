@@ -7,25 +7,35 @@ fn main() {
     println!("Guess the number!");
     let secret_number = rand::thread_rng().gen_range(1, 101);
     println!("The secret number is: {}", secret_number);
-    println!("Please input your guess.");
 
+    loop {
+        //  获取猜的数
+        println!("Please input your guess.");
+        let mut guess = String::new();
+        io::stdin().read_line(&mut guess)
+            .expect("Failed to read line");
+        // 转换
+         let  guess: u32 =match guess.trim().parse(){
+             Ok(num) =>num,
+             Err(_)=>{
+                  println!("非法输入");
+                 continue
+             },
 
-    //  mut 可变的
-    let mut guess = String::new();
+        };
 
-    //  生成随机数
-
-
-    io::stdin().read_line(&mut guess)
-        .expect("Failed to read line");
-
-    println!("You guessed: {}", guess);
-
-    match guess.cmp(&secret_number){
-        Ordering::Less => println!("Too small!"),
-        Ordering::Greater => println!("Too big!"),
-        Ordering::Equal => println!("You win!"),
+        // 转换
+        // let guess_int: i32 =  guess.trim().parse().expect(
+        //     "error str number "
+        //    );
+        println!("You guessed: {}", guess);
+        match guess.cmp(&secret_number){
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal =>  {
+                println!("You win!");
+                break;
+            },
+        }
     }
-
-
 }
