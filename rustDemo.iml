@@ -3,18 +3,24 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/hello_cargo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/gussing_game/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/miniGrep/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/my-project/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/variables/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_01_hello_cargo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_02_gussing_game/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_03_variables/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_04_ownerShip/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_12_miniGrep/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust权威指南/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stdCommand/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
-      <excludeFolder url="file://$MODULE_DIR$/hello_cargo/target" />
-      <excludeFolder url="file://$MODULE_DIR$/gussing_game/target" />
-      <excludeFolder url="file://$MODULE_DIR$/variables/target" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/target" />
-      <excludeFolder url="file://$MODULE_DIR$/miniGrep/target" />
+      <excludeFolder url="file://$MODULE_DIR$/stdCommand/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_02_gussing_game/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust权威指南/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_01_hello_cargo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_12_miniGrep/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_03_variables/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_04_ownerShip/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
