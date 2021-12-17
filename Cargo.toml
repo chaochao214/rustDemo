@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+    "_01_hello_cargo",
+    "_02_gussing_game",
+    "_03_variables",
+    "_04_ownerShip",
+    "_05_struct",
+    "_06_enum",
+    "_07_package",
+]

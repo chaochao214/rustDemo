@@ -12,6 +12,10 @@
       <sourceFolder url="file://$MODULE_DIR$/_12_miniGrep/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rust权威指南/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/stdCommand/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_05_struct/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_06_enum/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_07_package/restaurant/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_07_package/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/target" />
       <excludeFolder url="file://$MODULE_DIR$/stdCommand/target" />
@@ -21,6 +25,10 @@
       <excludeFolder url="file://$MODULE_DIR$/_12_miniGrep/target" />
       <excludeFolder url="file://$MODULE_DIR$/_03_variables/target" />
       <excludeFolder url="file://$MODULE_DIR$/_04_ownerShip/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_05_struct/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_06_enum/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_07_package/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_07_package/restaurant/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
