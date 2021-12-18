@@ -16,6 +16,9 @@
       <sourceFolder url="file://$MODULE_DIR$/_06_enum/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_07_package/restaurant/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_07_package/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_17_ObjectOrinted/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_20_rust_server/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rustDemo/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/target" />
       <excludeFolder url="file://$MODULE_DIR$/stdCommand/target" />

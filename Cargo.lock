@@ -34,6 +34,18 @@ name = "_07_package"
 version = "0.1.0"
 
 [[package]]
+name = "_12_miniGrep"
+version = "0.1.0"
+
+[[package]]
+name = "_17_ObjectOrinted"
+version = "0.1.0"
+
+[[package]]
+name = "_20_rust_server"
+version = "0.1.0"
+
+[[package]]
 name = "fuchsia-cprng"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -91,6 +103,27 @@ checksum = "678054eb77286b51581ba43620cc911abf02758c91f93f479767aed0f90458b2"
 dependencies = [
  "rand_core 0.3.1",
 ]
+
+[[package]]
+name = "rustDemo"
+version = "0.1.0"
+dependencies = [
+ "_01_hello_cargo",
+ "_02_gussing_game",
+ "_03_variables",
+ "_04_ownerShip",
+ "_05_struct",
+ "_06_enum",
+ "_07_package",
+ "_12_miniGrep",
+ "_17_ObjectOrinted",
+ "_20_rust_server",
+ "stdCommand",
+]
+
+[[package]]
+name = "stdCommand"
+version = "0.1.0"
 
 [[package]]
 name = "winapi"
