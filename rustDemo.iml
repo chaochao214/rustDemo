@@ -34,6 +34,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_06_enum/target" />
       <excludeFolder url="file://$MODULE_DIR$/_07_package/target" />
       <excludeFolder url="file://$MODULE_DIR$/_07_package/restaurant/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rustDemo/.idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

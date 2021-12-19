@@ -1,2 +1,14 @@
-/target
-*/target/**
+/.project
+/.settings
+/target/
+/**/target/
+.project
+.classpath
+/.settings/
+/bin/
+/logs/
+/backup/
+/.idea/
+.idea
+*.iml
+leveldb
