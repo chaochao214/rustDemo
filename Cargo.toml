@@ -8,6 +8,8 @@ members = [
     "_05_struct",
     "_06_enum",
     "_07_package",
+    "_08_collection",
+    "_10_trait",
     "_12_miniGrep",
     "_17_ObjectOrinted",
     "_20_rust_server",

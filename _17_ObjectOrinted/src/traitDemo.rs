@@ -13,7 +13,9 @@ impl Screen{
         for component in self.components.iter() {
             component.draw();
         }
-
     }
 
 }
+
+
+ 房

@@ -34,6 +34,14 @@ name = "_07_package"
 version = "0.1.0"
 
 [[package]]
+name = "_08_collection"
+version = "0.1.0"
+
+[[package]]
+name = "_10_trait"
+version = "0.1.0"
+
+[[package]]
 name = "_12_miniGrep"
 version = "0.1.0"
 
@@ -115,6 +123,8 @@ dependencies = [
  "_05_struct",
  "_06_enum",
  "_07_package",
+ "_08_collection",
+ "_10_trait",
  "_12_miniGrep",
  "_17_ObjectOrinted",
  "_20_rust_server",

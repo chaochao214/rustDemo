@@ -13,6 +13,8 @@ _04_ownerShip= { path = "../_04_ownerShip"}
 _05_struct= { path = "../_05_struct"}
 _06_enum= { path = "../_06_enum"}
 _07_package= { path = "../_07_package"}
+_08_collection= { path ="../_08_collection"}
+_10_trait= { path ="../_10_trait"}
 _12_miniGrep= { path = "../_12_miniGrep"}
 _17_ObjectOrinted= { path = "../_17_ObjectOrinted"}
 _20_rust_server= { path = "../_20_rust_server"}

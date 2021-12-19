@@ -19,6 +19,8 @@
       <sourceFolder url="file://$MODULE_DIR$/_17_ObjectOrinted/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_20_rust_server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rustDemo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_08_collection/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_10_trait/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/target" />
       <excludeFolder url="file://$MODULE_DIR$/stdCommand/target" />
