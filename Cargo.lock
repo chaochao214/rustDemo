@@ -42,6 +42,10 @@ name = "_10_trait"
 version = "0.1.0"
 
 [[package]]
+name = "_11_unittest"
+version = "0.1.0"
+
+[[package]]
 name = "_12_miniGrep"
 version = "0.1.0"
 
@@ -125,6 +129,7 @@ dependencies = [
  "_07_package",
  "_08_collection",
  "_10_trait",
+ "_11_unittest",
  "_12_miniGrep",
  "_17_ObjectOrinted",
  "_20_rust_server",

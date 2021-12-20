@@ -1,4 +1,4 @@
-`mod traitDemo;
+mod traitDemo;
 
 fn main() {
     println!("Hello, world!");
