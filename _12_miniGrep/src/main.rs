@@ -1,16 +1,19 @@
 use std::env;
 
 
+mod paramerger;
+
+use _12_miniGrep::*;
+
+/**
+* 启动命令 cargo  run  a  b
+*/
+
 fn main() {
 
-
-    //cargo run needle haystack
     let args: Vec<String> = env::args().collect();
-    let query = &args[1];
-    let filename = &args[2];
-
-    println!("----------");
-    println!("Searching for {}", query);
-    println!("In file {}", filename);
-    println!("{:?}", args);
+    let config = Config::new(&args);
+    run(config);
 }
+
+
