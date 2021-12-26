@@ -15,5 +15,7 @@ members = [
     "_17_ObjectOrinted",
     "_20_rust_server",
     "stdCommand",
-    "rustDemo"
+    "rustDemo",
+    "clapDemo"
+
 ]

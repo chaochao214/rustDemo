@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/_08_collection/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_10_trait/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_11_unittest/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/clapDemo/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/target" />
       <excludeFolder url="file://$MODULE_DIR$/stdCommand/target" />
