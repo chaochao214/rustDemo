@@ -102,6 +102,7 @@ dependencies = [
 name = "clapDemo"
 version = "0.1.0"
 dependencies = [
+ "ansi_term",
  "clap",
 ]
 

@@ -1,64 +1,46 @@
 extern crate clap;
-use clap::{Arg, App, SubCommand};
+use clap::{App, Arg};
+use ansi_term::Colour;
+// https://rust-lang-nursery.github.io/rust-cookbook/cli/arguments.html
 
-
+// cargo run -- -f myfile.txt -n 251
 fn main() {
     println!("Hello, world!");
-    let matches = App::new("My Super Program")
-        .version("1.0")
-        .author("Kevin K. <kbknapp@gmail.com>")
-        .about("Does awesome things")
-        .arg(Arg::with_name("config")
-            .short("c")
-            .long("config")
-            .value_name("FILE")
-            .help("Sets a custom config file")
-            .takes_value(true))
-        .arg(Arg::with_name("INPUT")
-            //默认值
-            .default_value("default.config")
-            .help("Sets the input file to use")
-            .required(true)
-            .index(1))
-        .arg(Arg::with_name("v")
-            .short("v")
-            .multiple(true)
-            .help("Sets the level of verbosity"))
-        .subcommand(SubCommand::with_name("test")
-            .about("controls testing features")
-            .version("1.3")
-            .author("Someone E. <someone_else@other.com>")
-            .arg(Arg::with_name("debug")
-                .short("d")
-                .help("print debug information verbosely")))
+    let matches = App::new("My Test Program")
+        .version("0.1.0")
+        .author("Hackerman Jones <hckrmnjones@hack.gov>")
+        .about("Teaches argument parsing")
+        .arg(
+            Arg::with_name("file")
+                .short("f")
+                .long("file")
+                .takes_value(true)
+                .help("A cool file"),
+        )
+        .arg(
+            Arg::with_name("num")
+                .short("n")
+                .long("number")
+                .takes_value(true)
+                .help("Five less than your favorite number"),
+        )
         .get_matches();
 
-    // Gets a value for config if supplied by user, or defaults to "default.conf"
-    let config = matches.value_of("config").unwrap_or("default.conf");
-    println!("Value for config: {}", config);
+    let myfile = matches.value_of("file").unwrap_or("input.txt");
+    println!("The file passed is: {}", myfile);
 
-    // Calling .unwrap() is safe here because "INPUT" is required (if "INPUT" wasn't
-    // required we could have used an 'if let' to conditionally get the value)
-    println!("Using input file: {}", matches.value_of("INPUT").unwrap());
-
-    // Vary the output based on how many times the user used the "verbose" flag
-    // (i.e. 'myprog -v -v -v' or 'myprog -vvv' vs 'myprog -v'
-    match matches.occurrences_of("v") {
-        0 => println!("No verbose info"),
-        1 => println!("Some verbose info"),
-        2 => println!("Tons of verbose info"),
-        3 | _ => println!("Don't be crazy"),
+    let num_str = matches.value_of("num");
+    match num_str {
+        None => println!("No idea what your favorite number is."),
+        Some(s) => match s.parse::<i32>() {
+            Ok(n) => println!("Your favorite number must be {}.", n + 5),
+            Err(_) => println!("That's not a number! {}", s),
+        },
     }
 
-    // You can handle information about subcommands by requesting their matches by name
-    // (as below), requesting just the name used, or both at the same time
-    if let Some(matches) = matches.subcommand_matches("test") {
-        if matches.is_present("debug") {
-            println!("Printing debug info...");
-        } else {
-            println!("Printing normally...");
-        }
-    }
 
-    // more program logic goes here...
+    println!("This is {} in color, {} in color and {} in color",
+             Colour::Red.paint("red"),
+             Colour::Blue.paint("blue"),
+             Colour::Green.paint("green"));
 }
