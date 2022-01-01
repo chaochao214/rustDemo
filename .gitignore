@@ -12,3 +12,11 @@
 .idea
 *.iml
 leveldb
+
+
+
+/target
+**/target/**
+**/.idea/**
+**/Cargo.lock
+**/debug/**
