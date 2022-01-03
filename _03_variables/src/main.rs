@@ -48,10 +48,9 @@ fn  tup(){
  fn forLoop(){
    for  number in (1..100).rev(){
        println!("延迟输出计数");
-      thread::sleep(time::Duration::from_secs(3));
+        thread::sleep(time::Duration::from_secs(1));
        println!("{}", number);
    }
-
 }
 
 

@@ -14,13 +14,17 @@ fn main() {
 
 
 /**
-*  espanso 启动服务
+ *espanso 启动服务
 **/
-fn start_service() {
+#[test]
+fn test_start_espanso() {
     // "D:\ideawork\espanso\target\debug\espanso.exe"
     // https://doc.rust-lang.org/stable/std/path/struct.PathBuf.html
 
-     let path =PathBuf::from(r"D:\ideawork\espanso\target\debug\espanso.exe");
+    // start_service文件路径：      espanso/src/cli/service/win.rs:95
+
+    let path = PathBuf::from(r"D:/ideawork/rustDemo/target/debug/_02_gussing_game.exe");
+    // let path = PathBuf::from(r"D:/ideawork/rustDemo/target/debug/_03_variables.exe");
     Command::new(path)
         .args(&["launcher"])
         .creation_flags(0x08000008) // CREATE_NO_WINDOW + DETACHED_PROCESS
@@ -29,6 +33,22 @@ fn start_service() {
 }
 
 
+/**
+ *@Description
+ *@Date 2022/1/3 22:07
+**/
+#[test]
+fn test_start_variable_count() {
+
+    let path = PathBuf::from(r"D:\ideawork\espanso\target\debug\espanso.exe");
+    Command::new(path)
+        .args(&["launcher"])
+        .creation_flags(0x08000008) // CREATE_NO_WINDOW + DETACHED_PROCESS
+        // .spawn()?;
+        .spawn();
+
+
+}
 
 
 
