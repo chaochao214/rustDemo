@@ -1,3 +1,4 @@
+use std::{thread, time};
 
 fn main() {
  // scalarDemo()
@@ -5,6 +6,8 @@ fn main() {
      // dataType()
 
     forLoop()
+
+
 }
 fn another_function(x: i32) {
     println!("The value of x is: {}", x);
@@ -36,14 +39,16 @@ fn dataType(){
 //元组类型
 fn  tup(){
     let a:(i32,f64,u8) = (500, 6.4,1);
-    let (x, y, z) = a;
+    let (x, y, z): (i32, f64, u8) = a;
     println!("The value of y is: {}", y);
 
 }
 
 // for
  fn forLoop(){
-   for  number in (1..4).rev() {
+   for  number in (1..100).rev(){
+       println!("延迟输出计数");
+      thread::sleep(time::Duration::from_secs(3));
        println!("{}", number);
    }
 
