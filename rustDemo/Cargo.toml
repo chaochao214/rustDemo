@@ -20,3 +20,4 @@ _12_miniGrep = { path = "../_12_miniGrep" }
 _17_ObjectOrinted = { path = "../_17_ObjectOrinted" }
 _20_rust_server = { path = "../_20_rust_server" }
 stdCommand = { path = "../stdCommand" }
+dialoguer = { path = "../dialoguer" }

@@ -16,5 +16,6 @@ members = [
     "_20_rust_server",
     "stdCommand",
     "rustDemo",
+    "dialoguer",
 
 ]
