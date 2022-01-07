@@ -14,7 +14,7 @@ fn main() {
 
 
 /**
- *espanso 启动服务
+ *  测试启动其他项目
 **/
 #[test]
 fn test_start_espanso() {
@@ -34,7 +34,7 @@ fn test_start_espanso() {
 
 
 /**
- *@Description
+ *@Description  espanso 启动服务
  *@Date 2022/1/3 22:07
 **/
 #[test]
